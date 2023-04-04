@@ -1,0 +1,74 @@
+html,input{
+    font-family:sans-serif;
+}
+
+body{
+    width:100%;
+    max-width:600px;
+    margin:0px auto;
+    padding:2em;
+}
+
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: rgb(28, 142, 142);
+    font-weight: bold;
+    padding: 16px;
+}
+
+form{
+    margin-top: 50px;
+}
+ 
+div{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label, input, button{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label{
+    text-align: left;
+    width: 15%;
+    margin-right: 8px;
+}
+
+input{
+    flex:auto;
+    text-align: left;
+}
+
+button {
+    width:70%;
+    margin:0 auto;
+    border-radius: 15px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+error-output{
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+@media only screen and (max-width:360px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    label{
+        width: 40%;
+        font-size: 14px;
+    }
+}

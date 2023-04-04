@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#">
+        <header class="headerContainer">
+            <h1>Html 5 Form Input</h1>
+        </header>
+
+        <div>
+            <label for="text">Name:</label>
+            <input type="text" name="text" id="text">
+            <error-output class="text-error" for="text"></error-output>
+
+        </div>
+
+        <div>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" id="Gender">Male
+            <input type="radio" name="Gender" id="Gender">Female
+        </div>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="url">Link:</label>
+            <input type="url" name="url" id="url">
+        </div>
+
+        <div>
+            <label for="contact">Contact:</label>
+            <input type="number" name="contact" id="contact">
+        </div>
+
+        <div>
+            <label for="search">Search:</label>
+            <input type="search" name="search" id="search">
+        </div>
+
+        <div>
+            <label for="party">Schedule Time:</label>
+            <input type="datetime-local" name="party" id="party">
+        </div>
+
+        <div>
+            <label for="salary">Salary Range:</label>
+            <input type="range" name="salary" id="salary" min="1000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
