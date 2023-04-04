@@ -24,3 +24,14 @@ email.addEventListener('input', function () {
     else
     emailError.textContent = "Email is Incorrect";
 });
+
+/*Number*/
+const number = document.querySelector('#contact');
+const numError = document.querySelector('.number-error');
+number.addEventListener('input', function () {
+    let numRegex = RegExp("^[0-9]{10}$");
+    if (numRegex.test(number.value))
+    numError.textContent = ""
+    else
+    numError.textContent = "Number is Incorrect";
+});
